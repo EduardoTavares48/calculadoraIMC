@@ -1,9 +1,21 @@
 function calc() {
     let peso = document.querySelector(".peso");
     let valorPeso = peso.value;
+    
+    if (valorPeso == "") {
+        alert("Digite seu peso");
+        peso.focus();
+        return
+    }
 
     let altura = document.querySelector(".altura");
     let valorAltura = altura.value;
+    
+    if (valorAltura == ""){
+        alert("Digite sua altura");
+        altura.focus();
+        return
+    }
 
     let imc = valorPeso / (valorAltura * valorAltura);
 
