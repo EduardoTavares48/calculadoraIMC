@@ -8,11 +8,23 @@ function calc() {
         return
     }
 
+    if (valorPeso == "") {
+        alert("Digite seu peso")
+        peso.focus();
+        return
+    }
+
     let altura = document.querySelector(".altura");
     let valorAltura = altura.value;
     
     if (valorAltura == ""){
         alert("Digite sua altura");
+        altura.focus();
+        return
+    }
+
+    if (valorAltura == "") {
+        alert("Digite seu peso");
         altura.focus();
         return
     }
